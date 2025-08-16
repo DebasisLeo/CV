@@ -1,266 +1,177 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DebasisCV</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    
-    .bar-bg {
-      background-color: #ddd6d6; 
-      border-radius: 9999px;
-    }
-    .bar-fill {
-      background-color: #6b111e; 
-      border-radius: 9999px;
-      height: 8px;
-      transition: width 0.5s ease-in-out;
-    }
-    .timeline-dot {
-      box-shadow: 0 0 0 4px #f5e6e7;
-    }
-    a:hover {
-      text-decoration: underline;
-      color: #4b000d; 
-    }
-  </style>
+  <title>Debasis CV</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 font-sans text-gray-900">
+<body>
 
-  <main class="max-w-6xl mx-auto mt-12 mb-20 flex flex-col md:flex-row bg-white shadow-2xl rounded-3xl overflow-hidden">
-    
+  <main class="container">
+
     <!-- Sidebar -->
-    <aside class="bg-gray-900 text-gray-300 w-full md:w-96 p-10 flex flex-col items-center space-y-8">
-      <!-- Profile Image -->
-      <img
-        src="https://i.ibb.co.com/BHvsfY3f/IMG-3263-3.jpg"
-        alt="Bivas Kumar Mittra"
-        class="rounded-full w-36 h-36 object-cover ring-4 ring-[#6b111e] shadow-lg"
-      />
-      <!-- Name  -->
-      <div class="text-center">
-        <h1 class="text-4xl font-extrabold mb-1 text-gray-100">Bivas Kumar Mittra</h1>
-        <p class="italic text-[#bb4950] text-lg">(Debasis)</p>
+    <aside class="sidebar">
+      <img src="https://i.ibb.co.com/BHvsfY3f/IMG-3263-3.jpg" alt="Bivas Kumar Mittra" class="profile-img" />
+
+      <div class="name">
+        <h1>Bivas Kumar Mittra</h1>
+        <p>(Debasis)</p>
       </div>
 
-      <!-- Contact Info -->
-      <div class="space-y-3 text-sm w-full">
-        <div class="flex items-center gap-3">
-          <svg class="w-6 h-6 text-[#bb4950]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 7 7 13 7 13s7-6 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.28-2.43 5.8-4 7.71C9.43 14.8 7 11.28 7 9z"/><circle cx="12" cy="9" r="2.5"/></svg>
-          <span>Dhaka, Bangladesh</span>
-        </div>
-        <div class="flex items-center gap-3">
-          <svg class="w-6 h-6 text-[#bb4950]" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.092 15.092 0 006.59 6.59l1.72-1.72a1 1 0 011.11-.21c.31.13.55.45.55.8v3.35a1 1 0 01-1 1A16 16 0 014 6a1 1 0 011-1h3.36c.35 0 .67.24.8.55a1 1 0 01-.21 1.11l-1.72 1.72z"/></svg>
-          <a href="tel:+8801777947046" class="hover:text-[#6b111e]">+8801777947046</a>
-        </div>
-        <div class="flex items-center gap-3">
-          <svg class="w-6 h-6 text-[#bb4950]" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/></svg>
-          <a href="mailto:joydebashis8@gmail.com" class="hover:text-[#6b111e] break-all">joydebashis8@gmail.com</a>
-        </div>
-      </div>
-
-      <!-- About Me -->
-      <section class="w-full mt-8">
-        <h2 class="font-semibold uppercase tracking-wider mb-3 border-b border-[#bb4950] pb-1 text-[#bb4950]">About Me</h2>
-        <p class="text-gray-300 text-sm leading-relaxed">
-          Passionate Full Stack Developer experienced with React, MongoDB, Firebase, and TailwindCSS.  
-          Skilled in building responsive modern web apps with interest in machine learning & cybersecurity.  
-          Collaborative and detail-oriented.
-        </p>
+      <section class="about">
+        <h2 class="section-title">About Me</h2>
+        <p>Passionate Full Stack Developer experienced with React, MongoDB, Firebase, and TailwindCSS. Skilled in building responsive modern web apps with interest in machine learning & cybersecurity. Collaborative and detail-oriented.</p>
       </section>
 
-      <!-- Skills -->
-      <section class="w-full mt-10">
-        <h2 class="font-semibold uppercase tracking-wider mb-3 border-b border-[#bb4950] pb-1 text-[#bb4950]">Skills</h2>
-        <div class="text-gray-300 text-sm space-y-3">
-          <div>
-            <p class="font-semibold">Programming Languages</p>
-            <p class="ml-2 mt-1">JavaScript, Java, C++</p>
-          </div>
-          <div>
-            <p class="font-semibold">Frameworks & Libraries</p>
-            <p class="ml-2 mt-1">React, TailwindCSS, DaisyUI, Next.js</p>
-          </div>
-          <div>
-            <p class="font-semibold">Backend Technologies</p>
-            <p class="ml-2 mt-1">Node.js, Express.js, MongoDB</p>
-          </div>
-          <div>
-            <p class="font-semibold">Tools & Platforms</p>
-            <p class="ml-2 mt-1">Firebase, Git, Postman</p>
-          </div>
-          <div>
-            <p class="font-semibold">Other Skills</p>
-            <p class="ml-2 mt-1">RESTful API Development, Debugging, Responsive Design</p>
-          </div>
-        </div>
+      <section class="skills">
+        <h2 class="section-title">Skills</h2>
+        <p><b>Programming Languages:</b> JavaScript, Java, C++</p>
+        <p><b>Frameworks & Libraries:</b> React, TailwindCSS, DaisyUI, Next.js</p>
+        <p><b>Backend:</b> Node.js, Express.js, MongoDB</p>
+        <p><b>Tools:</b> Firebase, Git, Postman</p>
+        <p><b>Other Skills:</b> REST API, Debugging, Responsive Design</p>
       </section>
 
-      <!-- Interests -->
-      <section class="w-full mt-10">
-        <h2 class="font-semibold uppercase tracking-wider mb-3 border-b border-[#bb4950] pb-1 text-[#bb4950]">Interests</h2>
-        <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+      <section class="interests">
+        <h2 class="section-title">Interests</h2>
+        <ul>
           <li>Machine Learning</li>
           <li>Cybersecurity</li>
           <li>Table Tennis, Cricket, Badminton</li>
         </ul>
       </section>
 
-      <!-- Links -->
-      <section class="w-full mt-10">
-        <h2 class="font-semibold uppercase tracking-wider mb-3 border-b border-[#bb4950] pb-1 text-[#bb4950]">Links</h2>
-        <ul class="text-gray-300 text-sm space-y-2">
-          <li>
-            <strong>LinkedIn:</strong> <br />
-            <a href="https://www.linkedin.com/in/debashis-joy-507818313/" target="_blank" class="hover:text-[#6b111e] break-all">linkedin.com/in/debashis-joy-507818313</a>
-          </li>
-          <li>
-            <strong>GitHub:</strong> <br />
-            <a href="https://github.com/DebasisLeo" target="_blank" class="hover:text-[#6b111e] break-all">github.com/DebasisLeo</a>
-          </li>
-        </ul>
+      <section class="links">
+        <h2 class="section-title">Links</h2>
+        <p><b>LinkedIn:</b><br>
+        <a href="https://www.linkedin.com/in/debashis-joy-507818313/" target="_blank">linkedin.com/in/debashis-joy-507818313</a></p>
+        <p><b>GitHub:</b><br>
+        <a href="https://github.com/DebasisLeo" target="_blank">github.com/DebasisLeo</a></p>
       </section>
-
     </aside>
 
-    
-    <section class="flex-1 p-12 md:py-16 md:px-20 space-y-16 bg-white">
-      
+    <!-- Main Content -->
+    <section class="main">
+
       <!-- Work Experience -->
       <section>
-        <h2 class="text-3xl font-extrabold text-gray-900 mb-8 border-b border-gray-400 pb-3">Work Experience</h2>
-        <div class="space-y-10">
-          <div class="flex items-start gap-10 relative">
-            <div class="flex flex-col items-end text-gray-500 w-40 text-sm font-semibold">
-              <span>2023</span>
-              <span>Project Contributor</span>
-              <span class="text-gray-900 font-bold mt-1">Multi-Vendor E-commerce Site</span>
-            </div>
-            <div class="relative flex-1 pl-12 border-l-4 border-gray-900">
-              <span class="timeline-dot absolute left-0 top-3 w-5 h-5 rounded-full bg-[#6b111e]"></span>
-              <p class="text-gray-900 font-semibold text-lg mb-2">Frontend Development & UI/UX Design</p>
-              <ul class="list-disc ml-6 text-gray-700 space-y-1">
-                <li>Contributed to frontend development with JavaScript for an interactive UI.</li>
-                <li>Enhanced usability and responsiveness across devices.</li>
-                <li>Collaborated with team members to ensure smooth workflows.</li>
-                <li>Live site: <a href="https://fashionbarnshop.com/" target="_blank" class="text-[#6b111e] hover:underline">fashionbarnshop.com</a></li>
-              </ul>
-            </div>
+        <h2>Work Experience</h2>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-left">
+            2023 <br> Project Contributor
+          </div>
+          <div class="timeline-right">
+            <span class="timeline-dot"></span>
+            <p class="timeline-title">Multi-Vendor E-commerce Site</p>
+            <ul>
+              <li>Contributed to frontend development with JavaScript.</li>
+              <li>Enhanced usability and responsiveness across devices.</li>
+              <li>Collaborated with team members for smooth workflows.</li>
+              <li>Live site: <a href="https://fashionbarnshop.com/" target="_blank">fashionbarnshop.com</a></li>
+            </ul>
           </div>
         </div>
+
       </section>
 
-  <!-- Projects -->
-<section>
-  <h2 class="text-3xl font-extrabold text-gray-900 mb-8 border-b border-gray-400 pb-3">Projects</h2>
-  <div class="space-y-10">
+      <!-- Projects -->
+      <section>
+        <h2>Projects</h2>
 
-    <div class="flex items-start gap-10 relative">
-      <div class="flex flex-col items-end text-gray-500 w-32 text-sm font-semibold">
-        <span>2023</span>
-      </div>
-      <div class="relative flex-1 pl-12 border-l-4 border-gray-900">
-        <span class="timeline-dot absolute left-0 top-3 w-5 h-5 rounded-full bg-[#6b111e]"></span>
-        <p class="text-gray-900 font-semibold text-lg mb-2">Lingo Bingo: Vocabulary Learning Application</p>
-        <ul class="list-disc ml-6 text-gray-700 space-y-1">
-          <li>Built interactive vocabulary app with gamified features.</li>
-          <li>Used React frontend with Firebase real-time DB.</li>
-          <li>Boosted user retention by 30% through engaging UI/UX design.</li>
-          <li>Live Link: <a href="https://private-route-47cf2.web.app/" target="_blank" class="text-[#6b111e] hover:underline">private-route-47cf2.web.app</a></li>
-        </ul>
-      </div>
-    </div>
+        <div class="timeline-wrapper">
+          <div class="timeline-left">
+            2023
+          </div>
+          <div class="timeline-right">
+            <span class="timeline-dot"></span>
+            <p class="timeline-title">Lingo Bingo: Vocabulary Learning App</p>
+            <ul>
+              <li>Interactive app with gamified features.</li>
+              <li>React frontend + Firebase DB.</li>
+              <li>Boosted user retention by 30%.</li>
+              <li>Live: <a href="https://private-route-47cf2.web.app/" target="_blank">private-route-47cf2.web.app</a></li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="flex items-start gap-10 relative">
-      <div class="flex flex-col items-end text-gray-500 w-32 text-sm font-semibold">
-        <span>2023</span>
-      </div>
-      <div class="relative flex-1 pl-12 border-l-4 border-gray-900">
-        <span class="timeline-dot absolute left-0 top-3 w-5 h-5 rounded-full bg-[#6b111e]"></span>
-        <p class="text-gray-900 font-semibold text-lg mb-2">Platinum Lounge: Restaurant Website</p>
-        <ul class="list-disc ml-6 text-gray-700 space-y-1">
-          <li>Responsive UI with online ordering features.</li>
-          <li>Integrated Firebase and MongoDB for real-time updates and data management.</li>
-          <li>Designed user-friendly interface showcasing menu and ordering.</li>
-          <li>Challenges: Responsive design and backend integration.</li>
-          <li>Live Link: <a href="https://bistro-boss-e3f5a.web.app/" target="_blank" class="text-[#6b111e] hover:underline">bistro-boss-e3f5a.web.app</a></li>
-          
-        </ul>
-      </div>
-    </div>
+        <div class="timeline-wrapper">
+          <div class="timeline-left">
+            2023
+          </div>
+          <div class="timeline-right">
+            <span class="timeline-dot"></span>
+            <p class="timeline-title">Platinum Lounge: Restaurant Website</p>
+            <ul>
+              <li>Responsive UI with ordering features.</li>
+              <li>Integrated Firebase + MongoDB.</li>
+              <li>User-friendly menu interface.</li>
+              <li>Live: <a href="https://bistro-boss-e3f5a.web.app/" target="_blank">bistro-boss-e3f5a.web.app</a></li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="flex items-start gap-10 relative">
-      <div class="flex flex-col items-end text-gray-500 w-32 text-sm font-semibold">
-        <span>2022</span>
-      </div>
-      <div class="relative flex-1 pl-12 border-l-4 border-gray-900">
-        <span class="timeline-dot absolute left-0 top-3 w-5 h-5 rounded-full bg-[#6b111e]"></span>
-        <p class="text-gray-900 font-semibold text-lg mb-2">Modern Hotel Booking Platform</p>
-        <ul class="list-disc ml-6 text-gray-700 space-y-1">
-          <li>Responsive hotel booking platform with real-time availability.</li>
-          <li>Backend with MongoDB and Firebase authentication.</li>
-          <li>Ensured smooth and intuitive user experience.</li>
-          <li>Live Link: <a href="https://hotel-managemet.web.app/" target="_blank" class="text-[#6b111e] hover:underline">hotel-managemet.web.app</a></li>
-        </ul>
-      </div>
-    </div>
+        <div class="timeline-wrapper">
+          <div class="timeline-left">
+            2022
+          </div>
+          <div class="timeline-right">
+            <span class="timeline-dot"></span>
+            <p class="timeline-title">Modern Hotel Booking Platform</p>
+            <ul>
+              <li>Responsive hotel booking platform with real-time availability.</li>
+              <li>Backend with MongoDB and Firebase authentication.</li>
+              <li>Ensured smooth and intuitive user experience.</li>
+              <li>Live: <a href="https://hotel-managemet.web.app/" target="_blank">hotel-managemet.web.app</a></li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="flex items-start gap-10 relative">
-      <div class="flex flex-col items-end text-gray-500 w-32 text-sm font-semibold">
-        <span>2021</span>
-      </div>
-      <div class="relative flex-1 pl-12 border-l-4 border-gray-900">
-        <span class="timeline-dot absolute left-0 top-3 w-5 h-5 rounded-full bg-[#6b111e]"></span>
-        <p class="text-gray-900 font-semibold text-lg mb-2">Visa Navigator Portal</p>
-        <ul class="list-disc ml-6 text-gray-700 space-y-1">
-          <li>Created portal for visa requirements & applications guidance.</li>
-          <li>Designed UI with DaisyUI and TailwindCSS.</li>
-          <li>Integrated multi-language support for wider accessibility.</li>
-          <li>Live Link: <a href="https://sunflower-project-416c5.web.app/" target="_blank" class="text-[#6b111e] hover:underline">sunflower-project-416c5.web.app</a></li>
-        </ul>
-      </div>
-    </div>
+        <div class="timeline-wrapper">
+          <div class="timeline-left">
+            2021
+          </div>
+          <div class="timeline-right">
+            <span class="timeline-dot"></span>
+            <p class="timeline-title">Visa Navigator Portal</p>
+            <ul>
+              <li>Created portal for visa guidance.</li>
+              <li>UI with DaisyUI + TailwindCSS.</li>
+              <li>Multi-language support integration.</li>
+              <li>Live: <a href="https://sunflower-project-416c5.web.app/" target="_blank">sunflower-project-416c5.web.app</a></li>
+            </ul>
+          </div>
+        </div>
 
-  </div>
-</section>
-
+      </section>
 
       <!-- Education -->
       <section>
-        <h2 class="text-3xl font-extrabold text-gray-900 mb-8 border-b border-gray-400 pb-3">Education</h2>
-        <div class="flex items-start gap-10 relative">
-          <div class="flex flex-col items-end text-gray-500 w-44 text-sm font-semibold">
-            <span>Shahjalal University Of Science & Technology</span>
-            <span>Software Engineering</span>
-            <span>Sylhet, Bangladesh</span>
+        <h2>Education</h2>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-left">
+            Shahjalal University Of Science & Technology
           </div>
-          <div class="relative flex-1 pl-12 border-l-4 border-gray-900">
-            <span class="timeline-dot absolute left-0 top-3 w-5 h-5 rounded-full bg-[#6b111e]"></span>
-            <p class="text-gray-900 font-semibold text-lg">Bachelor of Technology in Software Engineering</p>
+          <div class="timeline-right">
+            <span class="timeline-dot"></span>
+            <p class="timeline-title">Bachelor of Technology in Software Engineering</p>
+            <p>Sylhet, Bangladesh</p>
           </div>
         </div>
+
       </section>
 
       <!-- Languages -->
       <section>
-        <h2 class="text-3xl font-extrabold text-gray-900 mb-8 border-b border-gray-400 pb-3">Languages</h2>
-        <div class="grid grid-cols-2 gap-10 text-gray-700">
-          <div>
-            <p class="font-semibold mb-1">English</p>
-            <div class="bar-bg mb-4"><div class="bar-fill w-11/12"></div></div>
-
-            <p class="font-semibold mb-1">Bengali</p>
-            <div class="bar-bg mb-4"><div class="bar-fill w-full"></div></div>
-          </div>
-          <div>
-            <p class="font-semibold mb-1">Hindi</p>
-           
-
-            
-            <div class="bar-bg mb-4"><div class="bar-fill w-10/12"></div></div>
-          </div>
-        </div>
+        <h2>Languages</h2>
+        <p>English</p>
+        <div class="bar-bg"><div class="bar-fill" style="width: 90%;"></div></div>
+        <p>Bengali</p>
+        <div class="bar-bg"><div class="bar-fill" style="width: 100%;"></div></div>
+        <p>Hindi</p>
+        <div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div>
       </section>
 
     </section>
