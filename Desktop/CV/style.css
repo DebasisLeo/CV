@@ -113,7 +113,7 @@
   }
   .timeline-right a {
     font-weight: bold;
-    color: #6b111e; /* optional: keep your theme color */
+    color: #6b111e;
   }
   
   .timeline-right a:hover {
